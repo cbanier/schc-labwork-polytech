@@ -223,7 +223,7 @@ def context_statistics_as_ascii_table(context_statistics, max_width:int=256):
         misses_table.add_rows(misses_rows)
         misses_tables.append(misses_table)
 
-    row = ['all', overall_hits, overall_compression_factor, overall_compression_factor_on_compressible, overall_compressible, overall_incompressible, overall_size, overall_residue, 'N/A']
+    row = ['all', 'all', overall_hits, overall_compression_factor, overall_compression_factor_on_compressible, overall_compressible, overall_incompressible, overall_size, overall_residue]
     rules_rows.append(row)
     rules_table.add_rows(
         rows=rules_rows
